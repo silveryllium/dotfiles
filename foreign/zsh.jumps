@@ -1,0 +1,16 @@
+music="$HOME/music"
+m="$HOME/music"
+mu="$HOME/music"
+
+dl="$HOME/downloads"
+
+socrates="/media/Socrates"
+hd="/media/Socrates"
+
+media="/media"
+etc="/etc"
+
+other="$HOME/other"
+o="$HOME/other"
+
+sw="$HOME/swade"

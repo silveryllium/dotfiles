@@ -1,0 +1,3 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=358
+
+When viewing/editing a Java source file, put the cursor on an 'import...' line, or on a class name such as 'String', and then press F2. A browser opens showing the API (generated JavaDoc HTML pages) for the imported package or class. The mechanism can be extended to include your own generated JavaDocs.
