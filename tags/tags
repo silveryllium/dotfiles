@@ -9,7 +9,6 @@ BACKGROUND	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.j
 BULLET_DOT_SIZE	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        BULLET_DOT_SIZE = 50,$/;"	f	class:Values	access:public
 BULLET_LIFESPAN	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        BULLET_LIFESPAN = 1000,$/;"	f	class:Values	access:public
 BULLET_SPEED	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        BULLET_SPEED = 1000,$/;"	f	class:Values	access:public
-BULLET_SPEED	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        BULLET_SPEED = 1000;$/;"	f	class:Values	access:public
 Button	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int Button=0x7f060000;$/;"	f	class:R.style	access:public
 CUR_SCREEN	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^	private enum Screen { NO_SCREEN, CUR_SCREEN, LOADING, MAIN_MENU, GAME_SELECT, LEVEL_SELECT,$/;"	e	enum:UIManager.Screen	file:	access:public
 DIFF_SELECT	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^		MULTIPLAYER_HUB, DIFF_SELECT, SETTINGS, INSTRUCTIONS, LEADERBOARD, GAME }$/;"	e	enum:UIManager.Screen	file:	access:public
@@ -22,7 +21,6 @@ DOT_PURPLE	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.j
 DOT_RED	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        DOT_RED,$/;"	f	class:Values	access:public
 ENEMY_ATTENTION_SPAN	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        ENEMY_ATTENTION_SPAN = 8000;$/;"	f	class:Values	access:public
 ENEMY_DOT_SIZE	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        ENEMY_DOT_SIZE = 50,$/;"	f	class:Values	access:public
-ENEMY_FADE_RATE	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        ENEMY_FADE_RATE = 3,$/;"	f	class:Values	access:public
 ENEMY_FADE_RATE	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        ENEMY_FADE_RATE = 5,$/;"	f	class:Values	access:public
 EXPLOSION	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Powerup.java	/^        EXPLOSION    = 1,$/;"	f	class:Powerup	access:public
 EXPLOSION	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Projectile.java	/^        EXPLOSION = 6;$/;"	f	class:Projectile	access:public
@@ -132,13 +130,11 @@ LocalInputSource.velocityBuffer	/home/silver/swade/SwerveAndDestroy/src/com/swer
 Location	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Location.java	/^    public Location(){$/;"	m	class:Location	access:public	signature:()
 Location	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Location.java	/^    public Location(Location l){$/;"	m	class:Location	access:public	signature:(Location l)
 Location	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Location.java	/^    public Location(Location l, float rad){$/;"	m	class:Location	access:public	signature:(Location l, float rad)
-Location	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Location.java	/^    public Location(Location l, int rad){$/;"	m	class:Location	access:public	signature:(Location l, int rad)
 Location	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Location.java	/^    public Location(int fps, float minX, float maxX, float minY, float maxY, float radius){$/;"	m	class:Location	access:public	signature:(int fps, float minX, float maxX, float minY, float maxY, float radius)
 Location	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Location.java	/^public class Location {$/;"	c
 Location.Location	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Location.java	/^    public Location(){$/;"	m	class:Location	access:public	signature:()
 Location.Location	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Location.java	/^    public Location(Location l){$/;"	m	class:Location	access:public	signature:(Location l)
 Location.Location	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Location.java	/^    public Location(Location l, float rad){$/;"	m	class:Location	access:public	signature:(Location l, float rad)
-Location.Location	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Location.java	/^    public Location(Location l, int rad){$/;"	m	class:Location	access:public	signature:(Location l, int rad)
 Location.Location	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Location.java	/^    public Location(int fps, float minX, float maxX, float minY, float maxY, float radius){$/;"	m	class:Location	access:public	signature:(int fps, float minX, float maxX, float minY, float maxY, float radius)
 Location.distance	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Location.java	/^    public float distance(Location other){$/;"	m	class:Location	access:public	signature:(Location other)
 Location.fps	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Location.java	/^    private final int fps;$/;"	f	class:Location	file:	access:private
@@ -158,13 +154,11 @@ MAIN_MENU	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager
 MAX_ENEMIES	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Game.java	/^    private final int MAX_ENEMIES;$/;"	f	class:Game	file:	access:private
 MAX_POWERUPS	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Game.java	/^    private final int MAX_POWERUPS;$/;"	f	class:Game	file:	access:private
 MAX_VELOCITY	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        MAX_VELOCITY = 3200,$/;"	f	class:Values	access:public
-MAX_VELOCITY	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        MAX_VELOCITY = 3200;$/;"	f	class:Values	access:public
 MIN_PADDING_BOTTOM	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/GameView.java	/^                        MIN_PADDING_BOTTOM = 10;$/;"	f	class:GameView	file:	access:private
 MIN_PADDING_LEFT	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/GameView.java	/^    private final float MIN_PADDING_LEFT = 5, $/;"	f	class:GameView	file:	access:private
 MIN_PADDING_RIGHT	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/GameView.java	/^                        MIN_PADDING_RIGHT = 5, $/;"	f	class:GameView	file:	access:private
 MIN_PADDING_TOP	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/GameView.java	/^                        MIN_PADDING_TOP = 10, $/;"	f	class:GameView	file:	access:private
 MISSILE	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Projectile.java	/^        MISSILE = 5,$/;"	f	class:Projectile	access:public
-MISSILE	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Projectile.java	/^        MISSILE = 5;$/;"	f	class:Projectile	access:public
 MULTIPLAYER_HUB	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^		MULTIPLAYER_HUB, DIFF_SELECT, SETTINGS, INSTRUCTIONS, LEADERBOARD, GAME }$/;"	e	enum:UIManager.Screen	file:	access:public
 NOTIFY_START_GAME	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/LoadGameTask.java	/^	final String NOTIFY_START_GAME = "-1";$/;"	f	class:LoadGameTask	access:default
 NO_SCREEN	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^	private enum Screen { NO_SCREEN, CUR_SCREEN, LOADING, MAIN_MENU, GAME_SELECT, LEVEL_SELECT,$/;"	e	enum:UIManager.Screen	file:	access:public
@@ -177,8 +171,6 @@ PADDING_TOP	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/GameVie
 PLAYER_DOT_SIZE	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        PLAYER_DOT_SIZE = 50,$/;"	f	class:Values	access:public
 POWERUP_DOT_SIZE	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        POWERUP_DOT_SIZE = 50,$/;"	f	class:Values	access:public
 PREFS_NAME	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/GameSettings.java	/^	final static String PREFS_NAME = "SwADeSettings";$/;"	f	class:GameSettings	access:default
-PROJECTILE_FADE_RATE	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        PROJECTILE_FADE_RATE = 1,$/;"	f	class:Values	access:public
-PROJECTILE_FADE_RATE	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        PROJECTILE_FADE_RATE = 1;$/;"	f	class:Values	access:public
 PROJECTILE_FADE_RATE	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        PROJECTILE_FADE_RATE = 3,$/;"	f	class:Values	access:public
 Player	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Player.java	/^    public Player(){$/;"	m	class:Player	access:public	signature:()
 Player	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Player.java	/^public class Player {$/;"	c
@@ -210,29 +202,22 @@ Powerup.location	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Po
 Powerup.type	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Powerup.java	/^    public final int type;$/;"	f	class:Powerup	access:public
 Powerup.update	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Powerup.java	/^    public void update(){$/;"	m	class:Powerup	access:public	signature:()
 Projectile	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Projectile.java	/^    public Projectile(int type, Location location){$/;"	m	class:Projectile	access:public	signature:(int type, Location location)
-Projectile	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Projectile.java	/^    public Projectile(int type, float vx, float vy){$/;"	m	class:Projectile	access:public	signature:(int type, float vx, float vy)
 Projectile	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Projectile.java	/^public class Projectile {$/;"	c
 Projectile.EXPLOSION	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Projectile.java	/^        EXPLOSION = 6;$/;"	f	class:Projectile	access:public
 Projectile.MISSILE	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Projectile.java	/^        MISSILE = 5,$/;"	f	class:Projectile	access:public
-Projectile.MISSILE	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Projectile.java	/^        MISSILE = 5;$/;"	f	class:Projectile	access:public
 Projectile.Projectile	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Projectile.java	/^    public Projectile(int type, Location location){$/;"	m	class:Projectile	access:public	signature:(int type, Location location)
-Projectile.Projectile	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Projectile.java	/^    public Projectile(int type, float vx, float vy){$/;"	m	class:Projectile	access:public	signature:(int type, float vx, float vy)
 Projectile.SHOOTER_BULLET	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Projectile.java	/^        SHOOTER_BULLET = 3,$/;"	f	class:Projectile	access:public
 Projectile.TAP_TURRET_BULLET	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Projectile.java	/^        TAP_TURRET_BULLET = 2,$/;"	f	class:Projectile	access:public
 Projectile.TURRET	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Projectile.java	/^        TURRET = 1,$/;"	f	class:Projectile	access:public
 Projectile.TURRET_BULLET	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Projectile.java	/^        TURRET_BULLET = 4,$/;"	f	class:Projectile	access:public
 Projectile.age	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Projectile.java	/^    private float age = 0;$/;"	f	class:Projectile	file:	access:private
-Projectile.born	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Projectile.java	/^    private float born = 0;$/;"	f	class:Projectile	file:	access:private
 Projectile.draw	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Projectile.java	/^    public void draw(Canvas canvas){$/;"	m	class:Projectile	access:public	signature:(Canvas canvas)
 Projectile.lifespan	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Projectile.java	/^    private float lifespan = Values.BULLET_LIFESPAN;$/;"	f	class:Projectile	file:	access:private
 Projectile.location	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Projectile.java	/^    public Location location;$/;"	f	class:Projectile	access:public
 Projectile.murderous	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Projectile.java	/^    private boolean murderous = true;$/;"	f	class:Projectile	file:	access:private
-Projectile.opacity	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Projectile.java	/^    private float opacity = 100;$/;"	f	class:Projectile	file:	access:private
-Projectile.opacity	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Projectile.java	/^    private float opacity = 100f;$/;"	f	class:Projectile	file:	access:private
 Projectile.opacity	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Projectile.java	/^    private int opacity = 100;$/;"	f	class:Projectile	file:	access:private
 Projectile.spawned	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Projectile.java	/^    private float spawned = 0;$/;"	f	class:Projectile	file:	access:private
 Projectile.spawnsLeft	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Projectile.java	/^    private int spawnsLeft;$/;"	f	class:Projectile	file:	access:private
-Projectile.speed	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Projectile.java	/^    private final float speed;$/;"	f	class:Projectile	file:	access:private
 Projectile.type	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Projectile.java	/^    public final int type;$/;"	f	class:Projectile	access:public
 Projectile.update	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Projectile.java	/^    public void update(ArrayList<Projectile> projectiles){$/;"	m	class:Projectile	access:public	signature:(ArrayList<Projectile> projectiles)
 R	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^public final class R {$/;"	c
@@ -348,7 +333,6 @@ TURRET	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Projectile.j
 TURRET_ANGLE_INCREMENTS	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        TURRET_ANGLE_INCREMENTS = 6,$/;"	f	class:Values	access:public
 TURRET_BULLET	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Projectile.java	/^        TURRET_BULLET = 4,$/;"	f	class:Projectile	access:public
 TURRET_FIRING_DELAY	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        TURRET_FIRING_DELAY = 800,$/;"	f	class:Values	access:public
-TURRET_FIRING_DELAY	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        TURRET_FIRING_DELAY = 800;$/;"	f	class:Values	access:public
 TURRET_SPAWNS	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        TURRET_SPAWNS = 30,$/;"	f	class:Values	access:public
 TYPES	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Powerup.java	/^    public final static int[] TYPES = {$/;"	f	class:Powerup	access:public
 UIManager	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^public abstract class UIManager {$/;"	c
@@ -384,7 +368,6 @@ Values.BACKGROUND	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/V
 Values.BULLET_DOT_SIZE	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        BULLET_DOT_SIZE = 50,$/;"	f	class:Values	access:public
 Values.BULLET_LIFESPAN	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        BULLET_LIFESPAN = 1000,$/;"	f	class:Values	access:public
 Values.BULLET_SPEED	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        BULLET_SPEED = 1000,$/;"	f	class:Values	access:public
-Values.BULLET_SPEED	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        BULLET_SPEED = 1000;$/;"	f	class:Values	access:public
 Values.DOT_BLACK	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        DOT_BLACK,$/;"	f	class:Values	access:public
 Values.DOT_BLUE	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        DOT_BLUE,$/;"	f	class:Values	access:public
 Values.DOT_BROWN	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        DOT_BROWN,$/;"	f	class:Values	access:public
@@ -394,18 +377,13 @@ Values.DOT_PURPLE	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/V
 Values.DOT_RED	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        DOT_RED,$/;"	f	class:Values	access:public
 Values.ENEMY_ATTENTION_SPAN	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        ENEMY_ATTENTION_SPAN = 8000;$/;"	f	class:Values	access:public
 Values.ENEMY_DOT_SIZE	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        ENEMY_DOT_SIZE = 50,$/;"	f	class:Values	access:public
-Values.ENEMY_FADE_RATE	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        ENEMY_FADE_RATE = 3,$/;"	f	class:Values	access:public
 Values.ENEMY_FADE_RATE	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        ENEMY_FADE_RATE = 5,$/;"	f	class:Values	access:public
 Values.MAX_VELOCITY	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        MAX_VELOCITY = 3200,$/;"	f	class:Values	access:public
-Values.MAX_VELOCITY	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        MAX_VELOCITY = 3200;$/;"	f	class:Values	access:public
 Values.PLAYER_DOT_SIZE	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        PLAYER_DOT_SIZE = 50,$/;"	f	class:Values	access:public
 Values.POWERUP_DOT_SIZE	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        POWERUP_DOT_SIZE = 50,$/;"	f	class:Values	access:public
-Values.PROJECTILE_FADE_RATE	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        PROJECTILE_FADE_RATE = 1,$/;"	f	class:Values	access:public
-Values.PROJECTILE_FADE_RATE	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        PROJECTILE_FADE_RATE = 1;$/;"	f	class:Values	access:public
 Values.PROJECTILE_FADE_RATE	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        PROJECTILE_FADE_RATE = 3,$/;"	f	class:Values	access:public
 Values.TURRET_ANGLE_INCREMENTS	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        TURRET_ANGLE_INCREMENTS = 6,$/;"	f	class:Values	access:public
 Values.TURRET_FIRING_DELAY	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        TURRET_FIRING_DELAY = 800,$/;"	f	class:Values	access:public
-Values.TURRET_FIRING_DELAY	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        TURRET_FIRING_DELAY = 800;$/;"	f	class:Values	access:public
 Values.TURRET_SPAWNS	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        TURRET_SPAWNS = 30,$/;"	f	class:Values	access:public
 Values.init	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^    public static void init(Activity activity){$/;"	m	class:Values	access:public	signature:(Activity activity)
 Values.loadImages	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^    public static void loadImages(Activity activity){$/;"	m	class:Values	access:public	signature:(Activity activity)
@@ -422,7 +400,6 @@ animCount	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager
 app_name	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int app_name=0x7f050001;$/;"	f	class:R.string	access:public
 attr	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^    public static final class attr {$/;"	c	class:R	access:public
 bg_flower	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int bg_flower=0x7f020000;$/;"	f	class:R.drawable	access:public
-born	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Projectile.java	/^    private float born = 0;$/;"	f	class:Projectile	file:	access:private
 btn_black	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int btn_black=0x7f020001;$/;"	f	class:R.drawable	access:public
 btn_orange	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int btn_orange=0x7f020002;$/;"	f	class:R.drawable	access:public
 btn_red	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int btn_red=0x7f020003;$/;"	f	class:R.drawable	access:public
@@ -549,8 +526,6 @@ onCreate	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/SwerveAndD
 onDestroy	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/SwerveAndDestroy.java	/^    public void onDestroy() { $/;"	m	class:SwerveAndDestroy	access:public	signature:()
 onTouch	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^		public boolean onTouch(View v, MotionEvent event) {$/;"	m	class:UIManager.SwapOnTouchListener	access:public	signature:(View v, MotionEvent event)
 opacity	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Enemy.java	/^    private int opacity = 0;$/;"	f	class:Enemy	file:	access:private
-opacity	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Projectile.java	/^    private float opacity = 100;$/;"	f	class:Projectile	file:	access:private
-opacity	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Projectile.java	/^    private float opacity = 100f;$/;"	f	class:Projectile	file:	access:private
 opacity	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Projectile.java	/^    private int opacity = 100;$/;"	f	class:Projectile	file:	access:private
 out_bottom	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int out_bottom=0x7f040008;$/;"	f	class:R.anim	access:public
 out_bottom_close	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int out_bottom_close=0x7f040009;$/;"	f	class:R.anim	access:public
@@ -598,7 +573,6 @@ spawnPowerup	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Game.j
 spawned	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Projectile.java	/^    private float spawned = 0;$/;"	f	class:Projectile	file:	access:private
 spawnsLeft	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Projectile.java	/^    private int spawnsLeft;$/;"	f	class:Projectile	file:	access:private
 speed	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Enemy.java	/^    private float speed = 0;$/;"	f	class:Enemy	file:	access:private
-speed	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Projectile.java	/^    private final float speed;$/;"	f	class:Projectile	file:	access:private
 sprites	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Game.java	/^    private final ArrayList<Sprite> sprites;$/;"	f	class:Game	file:	access:private
 start	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/LoadGameTask.java	/^	public void start() {$/;"	m	class:LoadGameTask	access:public	signature:()
 startAnimation	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^	private static void startAnimation(final int animViewId, final int animId, int toggleViewId, final boolean enter, final boolean stallUI, int delayOffset) {$/;"	m	class:UIManager	file:	access:private	signature:(final int animViewId, final int animId, int toggleViewId, final boolean enter, final boolean stallUI, int delayOffset)

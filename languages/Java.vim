@@ -4,8 +4,33 @@ if !exists("g:java_editing_init_done")
     " Java vim config "
     map <C-\> <ESC>:pop<CR>
 
+    " Reimplement the vjde completion func to use noignorecase and then set it
+    " back to smartcase. This is a bug in vjde. "
+    func! VjdeCompletionFun0(findstart,base)
+        set noignorecase
+        if a:findstart
+            let output=VjdeCompletionFun(getline('.'),a:base,col('.'),a:findstart)
+            set smartcase
+            return output
+        endif
+        let lval = VjdeCompletionFun(strpart(getline('.'),0,col('.')),a:base,col('.'),a:findstart)
+        if type(lval) ==3 " List
+            let output=lval
+            set smartcase
+            return output
+        endif
+        if strlen(s:retstr)<2
+            let output=[]
+            set smartcase
+            return output
+        else
+            let output=split(s:retstr,"\n")
+            set smartcase
+            return output
+        endif
+    endf
+    
     " Vim JDE "
-    setlocal cfu=VjdeCompletionFun
     let g:vjde_lib_path=g:home."/.android/platforms/android-11/android.jar"
 
     fun! AddClassPath(classpath)
