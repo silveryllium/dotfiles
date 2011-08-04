@@ -50,6 +50,8 @@ imap <C-S-o> <ESC>:call OpenJavadoc()<CR>
 
 Bundle 'Raimondi/delimitMate'
 
+Bundle 'silveryllium/java_apidoc.vim'
+
 let g:indexer_lookForProjectDir=0
 let g:indexer_indexerListFilename=g:home."/.vim/indexer.list"
 let g:indexer_tagsDirname=g:home."/.vim/tags"
