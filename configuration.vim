@@ -44,13 +44,12 @@ Bundle 'snipMate'
 
 let g:browser="firefox"
 let g:javadoc_path=g:home."/.vim/resources/java/api"
-Bundle 'vim-scripts/java_apidoc.vim'
+Bundle 'silveryllium/java_apidoc.vim'
 map <C-S-o> :call OpenJavadoc()<CR>
 imap <C-S-o> <ESC>:call OpenJavadoc()<CR>
 
 Bundle 'Raimondi/delimitMate'
 
-Bundle 'silveryllium/java_apidoc.vim'
 
 let g:indexer_lookForProjectDir=0
 let g:indexer_indexerListFilename=g:home."/.vim/indexer.list"

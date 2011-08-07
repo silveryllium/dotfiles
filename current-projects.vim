@@ -8,8 +8,8 @@ if !exists("g:current_projects_loaded")
             call AddClassPath(g:home . "/work/sokono_advect/target/test-classes")
         endif
 
-        let g:android_logcat_filter="Swade:D *:S"
-        let g:android_logcat_filter_shift="Swade:E *:S"
+        let g:android_logcat_filter="AndroidRuntime:E Swade:D *:S"
+        let g:android_logcat_filter_shift="AndroidRuntime:E Swade:E *:S"
     endfunction
 endif
 

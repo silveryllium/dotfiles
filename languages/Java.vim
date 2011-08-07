@@ -45,7 +45,8 @@ if !exists("g:java_editing_init_done")
         else
             set makeprg=ant\ build
         endif
-        make
+        make!
+        let g:java_current_error_first=1
     endfun
 
     fun! AndroidRun()
@@ -63,7 +64,49 @@ if !exists("g:java_editing_init_done")
                     \%-Clocation\ %#:%.%#,
                     \%C%[%^:]%#%m,
                     \%-G%.%#
-        make
+        make!
+        let g:java_current_error_first=1
+    endfun
+
+    " Error skipping "
+    fun! NextError()
+        if !exists("g:java_current_error_first")
+            echo "Run make before correcting errors"
+            return
+        endif
+
+        if g:java_current_error_first == 1
+            let g:java_current_error_first=0
+            cc
+        else
+            try
+                cnext
+                if match(bufname("%"), "main_rules.xml") >= 0
+                    cprevious
+                    echo ""
+                    echo "No more errors"
+                endif
+            catch
+                echo "No more errors"
+            endtry
+        endif
+    endfun
+    
+    fun! PrevError()
+        if !exists("g:java_current_error_first")
+            echo "Run make before correcting errors"
+            return
+        endif
+
+        try
+            cprevious
+            if match(bufname("%"), "main_rules.xml") >= 0
+                cnext
+                echo "No previous errors"
+            endif
+        catch
+            echo "No previous errors"
+        endtry
     endfun
 
     map <F5> :call AntMake()<CR>
@@ -73,10 +116,10 @@ if !exists("g:java_editing_init_done")
     imap <S-F5> <ESC>:call MvnMake()<CR>
     imap <C-F5> <ESC>:call AndroidRun()<CR>
 
-    map <F6> :cn<CR>
-    map <S-F6> :cp<CR>
-    imap <F6> <ESC>:cn<CR>
-    imap <S-F6> <ESC>:cp<CR>
+    map <F6> :call NextError()<CR>
+    map <S-F6> :call PrevError()<CR>
+    imap <F6> <ESC><F6>
+    imap <S-F6> <ESC><S-F6>
 
     exec("source " . g:home . "/.vim/current-projects.vim")
 

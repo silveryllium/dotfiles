@@ -11,7 +11,7 @@ BULLET_LIFESPAN	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Val
 BULLET_SPEED	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        BULLET_SPEED = 1000,$/;"	f	class:Values	access:public
 Button	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int Button=0x7f060000;$/;"	f	class:R.style	access:public
 CUR_SCREEN	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^	private enum Screen { NO_SCREEN, CUR_SCREEN, LOADING, MAIN_MENU, GAME_SELECT, LEVEL_SELECT,$/;"	e	enum:UIManager.Screen	file:	access:public
-DIFF_SELECT	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^		MULTIPLAYER_HUB, DIFF_SELECT, SETTINGS, INSTRUCTIONS, LEADERBOARD, GAME }$/;"	e	enum:UIManager.Screen	file:	access:public
+DIFF_SELECT	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^		MULTIPLAYER_HUB, DIFF_SELECT, SETTINGS, INSTRUCTIONS, LEADERBOARD, GAME, PAUSE_MENU, RESUME_GAME,$/;"	e	enum:UIManager.Screen	file:	access:public
 DOT_BLACK	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        DOT_BLACK,$/;"	f	class:Values	access:public
 DOT_BLUE	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        DOT_BLUE,$/;"	f	class:Values	access:public
 DOT_BROWN	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        DOT_BROWN,$/;"	f	class:Values	access:public
@@ -19,6 +19,7 @@ DOT_GREEN	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.ja
 DOT_ORANGE	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        DOT_ORANGE,$/;"	f	class:Values	access:public
 DOT_PURPLE	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        DOT_PURPLE,$/;"	f	class:Values	access:public
 DOT_RED	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        DOT_RED,$/;"	f	class:Values	access:public
+END_GAME_FADE_RATE	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        END_GAME_FADE_RATE = 2,$/;"	f	class:Values	access:public
 ENEMY_ATTENTION_SPAN	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        ENEMY_ATTENTION_SPAN = 8000;$/;"	f	class:Values	access:public
 ENEMY_DOT_SIZE	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        ENEMY_DOT_SIZE = 50,$/;"	f	class:Values	access:public
 ENEMY_FADE_RATE	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        ENEMY_FADE_RATE = 5,$/;"	f	class:Values	access:public
@@ -40,7 +41,8 @@ Enemy.speed	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Enemy.j
 Enemy.target	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Enemy.java	/^    private Player target;$/;"	f	class:Enemy	file:	access:private
 Enemy.update	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Enemy.java	/^    public void update(){$/;"	m	class:Enemy	access:public	signature:()
 FPS	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/GameView.java	/^    public static int FPS = 30;$/;"	f	class:GameView	access:public
-GAME	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^		MULTIPLAYER_HUB, DIFF_SELECT, SETTINGS, INSTRUCTIONS, LEADERBOARD, GAME }$/;"	e	enum:UIManager.Screen	file:	access:public
+GAME	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^		MULTIPLAYER_HUB, DIFF_SELECT, SETTINGS, INSTRUCTIONS, LEADERBOARD, GAME, PAUSE_MENU, RESUME_GAME,$/;"	e	enum:UIManager.Screen	file:	access:public
+GAME_OVER	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^        GAME_OVER }$/;"	e	enum:UIManager.Screen	file:	access:public
 GAME_SELECT	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^	private enum Screen { NO_SCREEN, CUR_SCREEN, LOADING, MAIN_MENU, GAME_SELECT, LEVEL_SELECT,$/;"	e	enum:UIManager.Screen	file:	access:public
 Game	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Game.java	/^    public Game(InputSource[] inputs, Player[] players){$/;"	m	class:Game	access:public	signature:(InputSource[] inputs, Player[] players)
 Game	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Game.java	/^public class Game {$/;"	c
@@ -56,8 +58,10 @@ Game.draw	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Game.java
 Game.enemies	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Game.java	/^    private final ArrayList<Enemy> enemies;$/;"	f	class:Game	file:	access:private
 Game.enemyDestroyed	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Game.java	/^    private void enemyDestroyed(Projectile projectile, Enemy enemy){$/;"	m	class:Game	file:	access:private	signature:(Projectile projectile, Enemy enemy)
 Game.enemySpawnRate	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Game.java	/^    private float enemySpawnRate = 0.5f;$/;"	f	class:Game	file:	access:private
+Game.gameOver	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Game.java	/^    private boolean gameOver = false;$/;"	f	class:Game	file:	access:private
+Game.gameOver	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Game.java	/^    private void gameOver(){$/;"	m	class:Game	file:	access:private	signature:()
 Game.gameTime	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Game.java	/^    private float gameTime = 0;$/;"	f	class:Game	file:	access:private
-Game.inputs	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Game.java	/^    private final InputSource[] inputs;$/;"	f	class:Game	file:	access:private
+Game.inputs	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Game.java	/^    public final InputSource[] inputs;$/;"	f	class:Game	access:public
 Game.paused	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Game.java	/^    private boolean paused = false;$/;"	f	class:Game	file:	access:private
 Game.playerAttacked	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Game.java	/^    private void playerAttacked(Player player, Enemy enemy){$/;"	m	class:Game	file:	access:private	signature:(Player player, Enemy enemy)
 Game.playerPowerup	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Game.java	/^    private void playerPowerup(Player player, Powerup powerup){$/;"	m	class:Game	file:	access:private	signature:(Player player, Powerup powerup)
@@ -97,8 +101,11 @@ GameView.PADDING_TOP	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestro
 GameView.WIDTH	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/GameView.java	/^    private float WIDTH;$/;"	f	class:GameView	file:	access:private
 GameView.drawBackground	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/GameView.java	/^    private void drawBackground(Canvas canvas){$/;"	m	class:GameView	file:	access:private	signature:(Canvas canvas)
 GameView.drawUserInterface	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/GameView.java	/^    private void drawUserInterface(Canvas canvas){$/;"	m	class:GameView	file:	access:private	signature:(Canvas canvas)
-GameView.game	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/GameView.java	/^    private Game game;$/;"	f	class:GameView	file:	access:private
+GameView.endGame	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/GameView.java	/^    public void endGame(){$/;"	m	class:GameView	access:public	signature:()
+GameView.game	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/GameView.java	/^    public Game game;$/;"	f	class:GameView	access:public
 GameView.holder	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/GameView.java	/^    private SurfaceHolder holder;$/;"	f	class:GameView	file:	access:private
+GameView.opacity	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/GameView.java	/^    private int opacity = 100;$/;"	f	class:GameView	file:	access:private
+GameView.playingGame	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/GameView.java	/^    private boolean playingGame = true;$/;"	f	class:GameView	file:	access:private
 GameView.setGame	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/GameView.java	/^    public void setGame(Game game){$/;"	m	class:GameView	access:public	signature:(Game game)
 GameView.startGame	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/GameView.java	/^    public void startGame() {$/;"	m	class:GameView	access:public	signature:()
 GameView.surfaceChanged	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/GameView.java	/^    public void surfaceChanged(SurfaceHolder holder, int format, int width, int height){}$/;"	m	class:GameView	access:public	signature:(SurfaceHolder holder, int format, int width, int height)
@@ -106,12 +113,14 @@ GameView.surfaceCreated	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddes
 GameView.surfaceDestroyed	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/GameView.java	/^    public void surfaceDestroyed(SurfaceHolder holder){$/;"	m	class:GameView	access:public	signature:(SurfaceHolder holder)
 HEIGHT	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Game.java	/^    public static final float HEIGHT = SCALE;$/;"	f	class:Game	access:public
 HEIGHT	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/GameView.java	/^    private float HEIGHT;$/;"	f	class:GameView	file:	access:private
-INSTRUCTIONS	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^		MULTIPLAYER_HUB, DIFF_SELECT, SETTINGS, INSTRUCTIONS, LEADERBOARD, GAME }$/;"	e	enum:UIManager.Screen	file:	access:public
+INSTRUCTIONS	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^		MULTIPLAYER_HUB, DIFF_SELECT, SETTINGS, INSTRUCTIONS, LEADERBOARD, GAME, PAUSE_MENU, RESUME_GAME,$/;"	e	enum:UIManager.Screen	file:	access:public
 InputSource	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/InputSource.java	/^public abstract class InputSource {$/;"	c
+InputSource.click	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/InputSource.java	/^    public boolean click, longClick;$/;"	f	class:InputSource	access:public
 InputSource.fix	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/InputSource.java	/^    public abstract void fix();$/;"	m	class:InputSource	access:public	signature:()
+InputSource.longClick	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/InputSource.java	/^    public boolean click, longClick;$/;"	f	class:InputSource	access:public
 InputSource.velocity	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/InputSource.java	/^    public float[] velocity = new float[2];$/;"	f	class:InputSource	access:public
 LASER	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Powerup.java	/^        LASER        = 2,$/;"	f	class:Powerup	access:public
-LEADERBOARD	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^		MULTIPLAYER_HUB, DIFF_SELECT, SETTINGS, INSTRUCTIONS, LEADERBOARD, GAME }$/;"	e	enum:UIManager.Screen	file:	access:public
+LEADERBOARD	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^		MULTIPLAYER_HUB, DIFF_SELECT, SETTINGS, INSTRUCTIONS, LEADERBOARD, GAME, PAUSE_MENU, RESUME_GAME,$/;"	e	enum:UIManager.Screen	file:	access:public
 LEVEL_SELECT	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^	private enum Screen { NO_SCREEN, CUR_SCREEN, LOADING, MAIN_MENU, GAME_SELECT, LEVEL_SELECT,$/;"	e	enum:UIManager.Screen	file:	access:public
 LOADING	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^	private enum Screen { NO_SCREEN, CUR_SCREEN, LOADING, MAIN_MENU, GAME_SELECT, LEVEL_SELECT,$/;"	e	enum:UIManager.Screen	file:	access:public
 LoadGameTask	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/LoadGameTask.java	/^public class LoadGameTask extends Thread {$/;"	c	inherits:Thread
@@ -122,9 +131,13 @@ LoadGameTask.publishProgress	/home/silver/swade/SwerveAndDestroy/src/com/swervea
 LoadGameTask.run	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/LoadGameTask.java	/^	public void run() {		$/;"	m	class:LoadGameTask	access:public	signature:()
 LoadGameTask.start	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/LoadGameTask.java	/^	public void start() {$/;"	m	class:LoadGameTask	access:public	signature:()
 LocalInputSource	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/LocalInputSource.java	/^	public LocalInputSource(){$/;"	m	class:LocalInputSource	access:public	signature:()
-LocalInputSource	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/LocalInputSource.java	/^public class LocalInputSource extends InputSource {$/;"	c	inherits:InputSource
+LocalInputSource	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/LocalInputSource.java	/^public class LocalInputSource extends InputSource implements View.OnClickListener, View.OnLongClickListener {$/;"	c	inherits:InputSource,View.OnClickListener,View.OnLongClickListener
 LocalInputSource.LocalInputSource	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/LocalInputSource.java	/^	public LocalInputSource(){$/;"	m	class:LocalInputSource	access:public	signature:()
+LocalInputSource.clickedBuffer	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/LocalInputSource.java	/^    private boolean clickedBuffer = false;$/;"	f	class:LocalInputSource	file:	access:private
 LocalInputSource.fix	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/LocalInputSource.java	/^	public void fix(){$/;"	m	class:LocalInputSource	access:public	signature:()
+LocalInputSource.longClickedBuffer	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/LocalInputSource.java	/^    private boolean longClickedBuffer = false;$/;"	f	class:LocalInputSource	file:	access:private
+LocalInputSource.onClick	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/LocalInputSource.java	/^    public void onClick(View view){$/;"	m	class:LocalInputSource	access:public	signature:(View view)
+LocalInputSource.onLongClick	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/LocalInputSource.java	/^    public boolean onLongClick(View view){$/;"	m	class:LocalInputSource	access:public	signature:(View view)
 LocalInputSource.scale	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/LocalInputSource.java	/^    private double scale(double value){$/;"	m	class:LocalInputSource	file:	access:private	signature:(double value)
 LocalInputSource.velocityBuffer	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/LocalInputSource.java	/^    private float[] velocityBuffer = new float[2];$/;"	f	class:LocalInputSource	file:	access:private
 Location	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Location.java	/^    public Location(){$/;"	m	class:Location	access:public	signature:()
@@ -159,7 +172,7 @@ MIN_PADDING_LEFT	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Ga
 MIN_PADDING_RIGHT	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/GameView.java	/^                        MIN_PADDING_RIGHT = 5, $/;"	f	class:GameView	file:	access:private
 MIN_PADDING_TOP	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/GameView.java	/^                        MIN_PADDING_TOP = 10, $/;"	f	class:GameView	file:	access:private
 MISSILE	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Projectile.java	/^        MISSILE = 5,$/;"	f	class:Projectile	access:public
-MULTIPLAYER_HUB	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^		MULTIPLAYER_HUB, DIFF_SELECT, SETTINGS, INSTRUCTIONS, LEADERBOARD, GAME }$/;"	e	enum:UIManager.Screen	file:	access:public
+MULTIPLAYER_HUB	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^		MULTIPLAYER_HUB, DIFF_SELECT, SETTINGS, INSTRUCTIONS, LEADERBOARD, GAME, PAUSE_MENU, RESUME_GAME,$/;"	e	enum:UIManager.Screen	file:	access:public
 NOTIFY_START_GAME	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/LoadGameTask.java	/^	final String NOTIFY_START_GAME = "-1";$/;"	f	class:LoadGameTask	access:default
 NO_SCREEN	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^	private enum Screen { NO_SCREEN, CUR_SCREEN, LOADING, MAIN_MENU, GAME_SELECT, LEVEL_SELECT,$/;"	e	enum:UIManager.Screen	file:	access:public
 NO_TITLE	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^	final static String NO_TITLE = "";$/;"	f	class:UIManager	access:default
@@ -168,6 +181,7 @@ PADDING_BOTTOM	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Game
 PADDING_LEFT	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/GameView.java	/^    private float PADDING_LEFT, PADDING_RIGHT, PADDING_TOP, PADDING_BOTTOM;$/;"	f	class:GameView	file:	access:private
 PADDING_RIGHT	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/GameView.java	/^    private float PADDING_LEFT, PADDING_RIGHT, PADDING_TOP, PADDING_BOTTOM;$/;"	f	class:GameView	file:	access:private
 PADDING_TOP	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/GameView.java	/^    private float PADDING_LEFT, PADDING_RIGHT, PADDING_TOP, PADDING_BOTTOM;$/;"	f	class:GameView	file:	access:private
+PAUSE_MENU	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^		MULTIPLAYER_HUB, DIFF_SELECT, SETTINGS, INSTRUCTIONS, LEADERBOARD, GAME, PAUSE_MENU, RESUME_GAME,$/;"	e	enum:UIManager.Screen	file:	access:public
 PLAYER_DOT_SIZE	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        PLAYER_DOT_SIZE = 50,$/;"	f	class:Values	access:public
 POWERUP_DOT_SIZE	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        POWERUP_DOT_SIZE = 50,$/;"	f	class:Values	access:public
 PREFS_NAME	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/GameSettings.java	/^	final static String PREFS_NAME = "SwADeSettings";$/;"	f	class:GameSettings	access:default
@@ -175,6 +189,7 @@ PROJECTILE_FADE_RATE	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestro
 Player	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Player.java	/^    public Player(){$/;"	m	class:Player	access:public	signature:()
 Player	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Player.java	/^public class Player {$/;"	c
 Player.Player	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Player.java	/^    public Player(){$/;"	m	class:Player	access:public	signature:()
+Player.dead	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Player.java	/^    public boolean dead = false;$/;"	f	class:Player	access:public
 Player.dotsKilled	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Player.java	/^    private int dotsKilled, powerupsCollected;$/;"	f	class:Player	file:	access:private
 Player.draw	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Player.java	/^    public void draw(Canvas canvas){$/;"	m	class:Player	access:public	signature:(Canvas canvas)
 Player.hasShockShield	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Player.java	/^    public boolean hasShockShield(){$/;"	m	class:Player	access:public	signature:()
@@ -251,55 +266,64 @@ R.drawable.dot_orange	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestr
 R.drawable.dot_purple	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int dot_purple=0x7f020007;$/;"	f	class:R.drawable	access:public
 R.drawable.icon	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int icon=0x7f020008;$/;"	f	class:R.drawable	access:public
 R.id	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^    public static final class id {$/;"	c	class:R	access:public
-R.id.but_back	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_back=0x7f07001f;$/;"	f	class:R.id	access:public
+R.id.but_back	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_back=0x7f070023;$/;"	f	class:R.id	access:public
 R.id.but_diff_easy	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_diff_easy=0x7f070000;$/;"	f	class:R.id	access:public
 R.id.but_diff_hard	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_diff_hard=0x7f070002;$/;"	f	class:R.id	access:public
 R.id.but_diff_medium	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_diff_medium=0x7f070001;$/;"	f	class:R.id	access:public
-R.id.but_freeplay	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_freeplay=0x7f070009;$/;"	f	class:R.id	access:public
-R.id.but_leaderboard	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_leaderboard=0x7f07001d;$/;"	f	class:R.id	access:public
-R.id.but_multiplayer	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_multiplayer=0x7f070008;$/;"	f	class:R.id	access:public
-R.id.but_music	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_music=0x7f07001b;$/;"	f	class:R.id	access:public
-R.id.but_play	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_play=0x7f070020;$/;"	f	class:R.id	access:public
-R.id.but_quit	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_quit=0x7f070021;$/;"	f	class:R.id	access:public
-R.id.but_rules	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_rules=0x7f07001e;$/;"	f	class:R.id	access:public
-R.id.but_settings	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_settings=0x7f07001c;$/;"	f	class:R.id	access:public
-R.id.but_solo	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_solo=0x7f070007;$/;"	f	class:R.id	access:public
+R.id.but_endgame	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_endgame=0x7f070027;$/;"	f	class:R.id	access:public
+R.id.but_freeplay	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_freeplay=0x7f07000b;$/;"	f	class:R.id	access:public
+R.id.but_leaderboard	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_leaderboard=0x7f070021;$/;"	f	class:R.id	access:public
+R.id.but_mainmenu	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_mainmenu=0x7f070008;$/;"	f	class:R.id	access:public
+R.id.but_multiplayer	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_multiplayer=0x7f07000a;$/;"	f	class:R.id	access:public
+R.id.but_music	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_music=0x7f07001f;$/;"	f	class:R.id	access:public
+R.id.but_play	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_play=0x7f070024;$/;"	f	class:R.id	access:public
+R.id.but_playagain	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_playagain=0x7f070007;$/;"	f	class:R.id	access:public
+R.id.but_quit	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_quit=0x7f070025;$/;"	f	class:R.id	access:public
+R.id.but_resume	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_resume=0x7f070026;$/;"	f	class:R.id	access:public
+R.id.but_rules	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_rules=0x7f070022;$/;"	f	class:R.id	access:public
+R.id.but_settings	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_settings=0x7f070020;$/;"	f	class:R.id	access:public
+R.id.but_solo	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_solo=0x7f070009;$/;"	f	class:R.id	access:public
 R.id.cont_diff_descr	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int cont_diff_descr=0x7f070003;$/;"	f	class:R.id	access:public
-R.id.cont_diff_select	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int cont_diff_select=0x7f07001a;$/;"	f	class:R.id	access:public
-R.id.cont_dot_anim	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int cont_dot_anim=0x7f07000f;$/;"	f	class:R.id	access:public
-R.id.cont_game_select	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int cont_game_select=0x7f070019;$/;"	f	class:R.id	access:public
-R.id.cont_gtype_descr	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int cont_gtype_descr=0x7f07000a;$/;"	f	class:R.id	access:public
-R.id.cont_loading	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int cont_loading=0x7f070017;$/;"	f	class:R.id	access:public
-R.id.cont_main_menu	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int cont_main_menu=0x7f070018;$/;"	f	class:R.id	access:public
-R.id.flip	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int flip=0x7f070016;$/;"	f	class:R.id	access:public
-R.id.game	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int game=0x7f070014;$/;"	f	class:R.id	access:public
-R.id.loading_dot1	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int loading_dot1=0x7f070010;$/;"	f	class:R.id	access:public
-R.id.loading_dot2	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int loading_dot2=0x7f070011;$/;"	f	class:R.id	access:public
-R.id.loading_dot3	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int loading_dot3=0x7f070012;$/;"	f	class:R.id	access:public
-R.id.loading_text	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int loading_text=0x7f07000e;$/;"	f	class:R.id	access:public
-R.id.main_title	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int main_title=0x7f070015;$/;"	f	class:R.id	access:public
-R.id.main_view	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int main_view=0x7f070013;$/;"	f	class:R.id	access:public
+R.id.cont_diff_select	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int cont_diff_select=0x7f07001c;$/;"	f	class:R.id	access:public
+R.id.cont_dot_anim	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int cont_dot_anim=0x7f070011;$/;"	f	class:R.id	access:public
+R.id.cont_game_select	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int cont_game_select=0x7f07001b;$/;"	f	class:R.id	access:public
+R.id.cont_gameover_menu	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int cont_gameover_menu=0x7f07001e;$/;"	f	class:R.id	access:public
+R.id.cont_gtype_descr	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int cont_gtype_descr=0x7f07000c;$/;"	f	class:R.id	access:public
+R.id.cont_loading	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int cont_loading=0x7f070019;$/;"	f	class:R.id	access:public
+R.id.cont_main_menu	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int cont_main_menu=0x7f07001a;$/;"	f	class:R.id	access:public
+R.id.cont_pause_menu	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int cont_pause_menu=0x7f07001d;$/;"	f	class:R.id	access:public
+R.id.flip	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int flip=0x7f070018;$/;"	f	class:R.id	access:public
+R.id.game	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int game=0x7f070016;$/;"	f	class:R.id	access:public
+R.id.loading_dot1	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int loading_dot1=0x7f070012;$/;"	f	class:R.id	access:public
+R.id.loading_dot2	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int loading_dot2=0x7f070013;$/;"	f	class:R.id	access:public
+R.id.loading_dot3	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int loading_dot3=0x7f070014;$/;"	f	class:R.id	access:public
+R.id.loading_text	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int loading_text=0x7f070010;$/;"	f	class:R.id	access:public
+R.id.main_title	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int main_title=0x7f070017;$/;"	f	class:R.id	access:public
+R.id.main_view	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int main_view=0x7f070015;$/;"	f	class:R.id	access:public
 R.id.text_descr_easy	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int text_descr_easy=0x7f070004;$/;"	f	class:R.id	access:public
 R.id.text_descr_hard	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int text_descr_hard=0x7f070006;$/;"	f	class:R.id	access:public
 R.id.text_descr_medium	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int text_descr_medium=0x7f070005;$/;"	f	class:R.id	access:public
-R.id.text_freeplay	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int text_freeplay=0x7f07000d;$/;"	f	class:R.id	access:public
-R.id.text_multiplayer	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int text_multiplayer=0x7f07000c;$/;"	f	class:R.id	access:public
-R.id.text_solo	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int text_solo=0x7f07000b;$/;"	f	class:R.id	access:public
+R.id.text_freeplay	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int text_freeplay=0x7f07000f;$/;"	f	class:R.id	access:public
+R.id.text_multiplayer	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int text_multiplayer=0x7f07000e;$/;"	f	class:R.id	access:public
+R.id.text_solo	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int text_solo=0x7f07000d;$/;"	f	class:R.id	access:public
 R.layout	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^    public static final class layout {$/;"	c	class:R	access:public
 R.layout.diff_select	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int diff_select=0x7f030000;$/;"	f	class:R.layout	access:public
-R.layout.game_select	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int game_select=0x7f030001;$/;"	f	class:R.layout	access:public
-R.layout.loading	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int loading=0x7f030002;$/;"	f	class:R.layout	access:public
-R.layout.main	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int main=0x7f030003;$/;"	f	class:R.layout	access:public
-R.layout.main_menu	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int main_menu=0x7f030004;$/;"	f	class:R.layout	access:public
+R.layout.game_over	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int game_over=0x7f030001;$/;"	f	class:R.layout	access:public
+R.layout.game_select	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int game_select=0x7f030002;$/;"	f	class:R.layout	access:public
+R.layout.loading	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int loading=0x7f030003;$/;"	f	class:R.layout	access:public
+R.layout.main	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int main=0x7f030004;$/;"	f	class:R.layout	access:public
+R.layout.main_menu	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int main_menu=0x7f030005;$/;"	f	class:R.layout	access:public
+R.layout.pause_menu	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int pause_menu=0x7f030006;$/;"	f	class:R.layout	access:public
 R.string	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^    public static final class string {$/;"	c	class:R	access:public
 R.string.app_name	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int app_name=0x7f050001;$/;"	f	class:R.string	access:public
 R.string.hello	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int hello=0x7f050000;$/;"	f	class:R.string	access:public
 R.style	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^    public static final class style {$/;"	c	class:R	access:public
 R.style.Button	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int Button=0x7f060000;$/;"	f	class:R.style	access:public
 R.style.SwADeTheme	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int SwADeTheme=0x7f060001;$/;"	f	class:R.style	access:public
+RESUME_GAME	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^		MULTIPLAYER_HUB, DIFF_SELECT, SETTINGS, INSTRUCTIONS, LEADERBOARD, GAME, PAUSE_MENU, RESUME_GAME,$/;"	e	enum:UIManager.Screen	file:	access:public
 REVIVE	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Powerup.java	/^        REVIVE       = 8;$/;"	f	class:Powerup	access:public
 SCALE	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Game.java	/^    public static final float SCALE = 1000f;$/;"	f	class:Game	access:public
-SETTINGS	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^		MULTIPLAYER_HUB, DIFF_SELECT, SETTINGS, INSTRUCTIONS, LEADERBOARD, GAME }$/;"	e	enum:UIManager.Screen	file:	access:public
+SETTINGS	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^		MULTIPLAYER_HUB, DIFF_SELECT, SETTINGS, INSTRUCTIONS, LEADERBOARD, GAME, PAUSE_MENU, RESUME_GAME,$/;"	e	enum:UIManager.Screen	file:	access:public
 SHIELD	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Powerup.java	/^        SHIELD       = 3,$/;"	f	class:Powerup	access:public
 SHOCK_SHIELD	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Powerup.java	/^        SHOCK_SHIELD = 4,$/;"	f	class:Powerup	access:public
 SHOOTER	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Powerup.java	/^        SHOOTER      = 6,$/;"	f	class:Powerup	access:public
@@ -348,10 +372,14 @@ UIManager.SwapOnTouchListener	/home/silver/swade/SwerveAndDestroy/src/com/swerve
 UIManager.SwapOnTouchListener.onTouch	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^		public boolean onTouch(View v, MotionEvent event) {$/;"	m	class:UIManager.SwapOnTouchListener	access:public	signature:(View v, MotionEvent event)
 UIManager.animCount	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^	static int animCount = 0;$/;"	f	class:UIManager	access:default
 UIManager.curScreen	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^	static Screen curScreen = Screen.NO_SCREEN;$/;"	f	class:UIManager	access:default
+UIManager.doCountdownAndRun	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^    private static void doCountdownAndRun(Runnable run){$/;"	m	class:UIManager	file:	access:private	signature:(Runnable run)
+UIManager.gameOver	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^    public static void gameOver(){$/;"	m	class:UIManager	access:public	signature:()
 UIManager.hide	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^	private static void hide(Screen id) {$/;"	m	class:UIManager	file:	access:private	signature:(Screen id)
 UIManager.init	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^	public static void init(Activity a) {$/;"	m	class:UIManager	access:public	signature:(Activity a)
 UIManager.isLocked	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^	public static boolean isLocked() {$/;"	m	class:UIManager	access:public	signature:()
+UIManager.pauseGame	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^    public static void pauseGame(){$/;"	m	class:UIManager	access:public	signature:()
 UIManager.prevScreen	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^	static Screen prevScreen = Screen.NO_SCREEN;$/;"	f	class:UIManager	access:default
+UIManager.resumeGame	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^    public static void resumeGame(){$/;"	m	class:UIManager	access:public	signature:()
 UIManager.screenStack	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^	static Stack<Integer> screenStack = new Stack<Integer>();$/;"	f	class:UIManager	access:default
 UIManager.setBackButton	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^	private static void setBackButton(Screen fromId, Screen toId) {$/;"	m	class:UIManager	file:	access:private	signature:(Screen fromId, Screen toId)
 UIManager.setTitleText	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^	private static void setTitleText(final String title) {	$/;"	m	class:UIManager	file:	access:private	signature:(final String title)
@@ -375,6 +403,7 @@ Values.DOT_GREEN	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Va
 Values.DOT_ORANGE	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        DOT_ORANGE,$/;"	f	class:Values	access:public
 Values.DOT_PURPLE	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        DOT_PURPLE,$/;"	f	class:Values	access:public
 Values.DOT_RED	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        DOT_RED,$/;"	f	class:Values	access:public
+Values.END_GAME_FADE_RATE	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        END_GAME_FADE_RATE = 2,$/;"	f	class:Values	access:public
 Values.ENEMY_ATTENTION_SPAN	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        ENEMY_ATTENTION_SPAN = 8000;$/;"	f	class:Values	access:public
 Values.ENEMY_DOT_SIZE	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        ENEMY_DOT_SIZE = 50,$/;"	f	class:Values	access:public
 Values.ENEMY_FADE_RATE	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^        ENEMY_FADE_RATE = 5,$/;"	f	class:Values	access:public
@@ -403,21 +432,27 @@ bg_flower	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^
 btn_black	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int btn_black=0x7f020001;$/;"	f	class:R.drawable	access:public
 btn_orange	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int btn_orange=0x7f020002;$/;"	f	class:R.drawable	access:public
 btn_red	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int btn_red=0x7f020003;$/;"	f	class:R.drawable	access:public
-but_back	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_back=0x7f07001f;$/;"	f	class:R.id	access:public
+but_back	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_back=0x7f070023;$/;"	f	class:R.id	access:public
 but_diff_easy	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_diff_easy=0x7f070000;$/;"	f	class:R.id	access:public
 but_diff_hard	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_diff_hard=0x7f070002;$/;"	f	class:R.id	access:public
 but_diff_medium	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_diff_medium=0x7f070001;$/;"	f	class:R.id	access:public
-but_freeplay	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_freeplay=0x7f070009;$/;"	f	class:R.id	access:public
-but_leaderboard	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_leaderboard=0x7f07001d;$/;"	f	class:R.id	access:public
-but_multiplayer	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_multiplayer=0x7f070008;$/;"	f	class:R.id	access:public
-but_music	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_music=0x7f07001b;$/;"	f	class:R.id	access:public
-but_play	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_play=0x7f070020;$/;"	f	class:R.id	access:public
-but_quit	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_quit=0x7f070021;$/;"	f	class:R.id	access:public
-but_rules	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_rules=0x7f07001e;$/;"	f	class:R.id	access:public
-but_settings	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_settings=0x7f07001c;$/;"	f	class:R.id	access:public
-but_solo	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_solo=0x7f070007;$/;"	f	class:R.id	access:public
+but_endgame	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_endgame=0x7f070027;$/;"	f	class:R.id	access:public
+but_freeplay	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_freeplay=0x7f07000b;$/;"	f	class:R.id	access:public
+but_leaderboard	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_leaderboard=0x7f070021;$/;"	f	class:R.id	access:public
+but_mainmenu	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_mainmenu=0x7f070008;$/;"	f	class:R.id	access:public
+but_multiplayer	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_multiplayer=0x7f07000a;$/;"	f	class:R.id	access:public
+but_music	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_music=0x7f07001f;$/;"	f	class:R.id	access:public
+but_play	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_play=0x7f070024;$/;"	f	class:R.id	access:public
+but_playagain	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_playagain=0x7f070007;$/;"	f	class:R.id	access:public
+but_quit	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_quit=0x7f070025;$/;"	f	class:R.id	access:public
+but_resume	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_resume=0x7f070026;$/;"	f	class:R.id	access:public
+but_rules	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_rules=0x7f070022;$/;"	f	class:R.id	access:public
+but_settings	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_settings=0x7f070020;$/;"	f	class:R.id	access:public
+but_solo	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int but_solo=0x7f070009;$/;"	f	class:R.id	access:public
 button	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int button=0x7f020004;$/;"	f	class:R.drawable	access:public
 cancel	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/LoadGameTask.java	/^	public void cancel() {$/;"	m	class:LoadGameTask	access:public	signature:()
+click	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/InputSource.java	/^    public boolean click, longClick;$/;"	f	class:InputSource	access:public
+clickedBuffer	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/LocalInputSource.java	/^    private boolean clickedBuffer = false;$/;"	f	class:LocalInputSource	file:	access:private
 collision	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Game.java	/^    private boolean collision(Location one, Location two){$/;"	m	class:Game	file:	access:private	signature:(Location one, Location two)
 com.swerveanddestroy	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^package com.swerveanddestroy;$/;"	p
 com.swerveanddestroy	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Enemy.java	/^package com.swerveanddestroy;$/;"	p
@@ -436,15 +471,19 @@ com.swerveanddestroy	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestro
 com.swerveanddestroy	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^package com.swerveanddestroy;$/;"	p
 com.swerveanddestroy	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^package com.swerveanddestroy;$/;"	p
 cont_diff_descr	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int cont_diff_descr=0x7f070003;$/;"	f	class:R.id	access:public
-cont_diff_select	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int cont_diff_select=0x7f07001a;$/;"	f	class:R.id	access:public
-cont_dot_anim	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int cont_dot_anim=0x7f07000f;$/;"	f	class:R.id	access:public
-cont_game_select	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int cont_game_select=0x7f070019;$/;"	f	class:R.id	access:public
-cont_gtype_descr	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int cont_gtype_descr=0x7f07000a;$/;"	f	class:R.id	access:public
-cont_loading	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int cont_loading=0x7f070017;$/;"	f	class:R.id	access:public
-cont_main_menu	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int cont_main_menu=0x7f070018;$/;"	f	class:R.id	access:public
+cont_diff_select	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int cont_diff_select=0x7f07001c;$/;"	f	class:R.id	access:public
+cont_dot_anim	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int cont_dot_anim=0x7f070011;$/;"	f	class:R.id	access:public
+cont_game_select	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int cont_game_select=0x7f07001b;$/;"	f	class:R.id	access:public
+cont_gameover_menu	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int cont_gameover_menu=0x7f07001e;$/;"	f	class:R.id	access:public
+cont_gtype_descr	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int cont_gtype_descr=0x7f07000c;$/;"	f	class:R.id	access:public
+cont_loading	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int cont_loading=0x7f070019;$/;"	f	class:R.id	access:public
+cont_main_menu	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int cont_main_menu=0x7f07001a;$/;"	f	class:R.id	access:public
+cont_pause_menu	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int cont_pause_menu=0x7f07001d;$/;"	f	class:R.id	access:public
 curScreen	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^	static Screen curScreen = Screen.NO_SCREEN;$/;"	f	class:UIManager	access:default
+dead	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Player.java	/^    public boolean dead = false;$/;"	f	class:Player	access:public
 diff_select	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int diff_select=0x7f030000;$/;"	f	class:R.layout	access:public
 distance	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Location.java	/^    public float distance(Location other){$/;"	m	class:Location	access:public	signature:(Location other)
+doCountdownAndRun	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^    private static void doCountdownAndRun(Runnable run){$/;"	m	class:UIManager	file:	access:private	signature:(Runnable run)
 done	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Sprite.java	/^    public boolean done(){$/;"	m	class:Sprite	access:public	signature:()
 dot_green	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int dot_green=0x7f020005;$/;"	f	class:R.drawable	access:public
 dot_orange	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int dot_orange=0x7f020006;$/;"	f	class:R.drawable	access:public
@@ -461,21 +500,26 @@ drawUserInterface	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/G
 drawable	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^    public static final class drawable {$/;"	c	class:R	access:public
 drawable	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Sprite.java	/^    private Drawable drawable;$/;"	f	class:Sprite	file:	access:private
 duration	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Sprite.java	/^    public final float duration;$/;"	f	class:Sprite	access:public
+endGame	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/GameView.java	/^    public void endGame(){$/;"	m	class:GameView	access:public	signature:()
 enemies	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Game.java	/^    private final ArrayList<Enemy> enemies;$/;"	f	class:Game	file:	access:private
 enemyDestroyed	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Game.java	/^    private void enemyDestroyed(Projectile projectile, Enemy enemy){$/;"	m	class:Game	file:	access:private	signature:(Projectile projectile, Enemy enemy)
 enemySpawnRate	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Game.java	/^    private float enemySpawnRate = 0.5f;$/;"	f	class:Game	file:	access:private
 fix	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/InputSource.java	/^    public abstract void fix();$/;"	m	class:InputSource	access:public	signature:()
 fix	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/LocalInputSource.java	/^	public void fix(){$/;"	m	class:LocalInputSource	access:public	signature:()
 fleeingEnabled	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Enemy.java	/^    private boolean fleeingEnabled = true;$/;"	f	class:Enemy	file:	access:private
-flip	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int flip=0x7f070016;$/;"	f	class:R.id	access:public
+flip	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int flip=0x7f070018;$/;"	f	class:R.id	access:public
 follow	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Enemy.java	/^    private boolean follow = true;$/;"	f	class:Enemy	file:	access:private
 fps	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Location.java	/^    private final int fps;$/;"	f	class:Location	file:	access:private
 frame	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Sprite.java	/^    private int frame = -1;$/;"	f	class:Sprite	file:	access:private
 fromScreen	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^		Screen fromScreen, toScreen;$/;"	f	class:UIManager.SwapOnClickListener	access:default
-game	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int game=0x7f070014;$/;"	f	class:R.id	access:public
-game	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/GameView.java	/^    private Game game;$/;"	f	class:GameView	file:	access:private
+game	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int game=0x7f070016;$/;"	f	class:R.id	access:public
+game	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/GameView.java	/^    public Game game;$/;"	f	class:GameView	access:public
+gameOver	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Game.java	/^    private boolean gameOver = false;$/;"	f	class:Game	file:	access:private
+gameOver	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Game.java	/^    private void gameOver(){$/;"	m	class:Game	file:	access:private	signature:()
+gameOver	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^    public static void gameOver(){$/;"	m	class:UIManager	access:public	signature:()
 gameTime	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Game.java	/^    private float gameTime = 0;$/;"	f	class:Game	file:	access:private
-game_select	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int game_select=0x7f030001;$/;"	f	class:R.layout	access:public
+game_over	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int game_over=0x7f030001;$/;"	f	class:R.layout	access:public
+game_select	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int game_select=0x7f030002;$/;"	f	class:R.layout	access:public
 hasShockShield	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Player.java	/^    public boolean hasShockShield(){$/;"	m	class:Player	access:public	signature:()
 hello	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int hello=0x7f050000;$/;"	f	class:R.string	access:public
 hide	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^	private static void hide(Screen id) {$/;"	m	class:UIManager	file:	access:private	signature:(Screen id)
@@ -493,27 +537,29 @@ in_right_close	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.ja
 in_top	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int in_top=0x7f040007;$/;"	f	class:R.anim	access:public
 init	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^	public static void init(Activity a) {$/;"	m	class:UIManager	access:public	signature:(Activity a)
 init	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^    public static void init(Activity activity){$/;"	m	class:Values	access:public	signature:(Activity activity)
-inputs	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Game.java	/^    private final InputSource[] inputs;$/;"	f	class:Game	file:	access:private
+inputs	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Game.java	/^    public final InputSource[] inputs;$/;"	f	class:Game	access:public
 isLocked	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^	public static boolean isLocked() {$/;"	m	class:UIManager	access:public	signature:()
 layout	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^    public static final class layout {$/;"	c	class:R	access:public
 lifespan	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Projectile.java	/^    private float lifespan = Values.BULLET_LIFESPAN;$/;"	f	class:Projectile	file:	access:private
 load	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/GameSettings.java	/^	public static void load() {$/;"	m	class:GameSettings	access:public	signature:()
 loadImages	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Values.java	/^    public static void loadImages(Activity activity){$/;"	m	class:Values	access:public	signature:(Activity activity)
 loader	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/SwerveAndDestroy.java	/^	LoadGameTask loader;$/;"	f	class:SwerveAndDestroy	access:default
-loading	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int loading=0x7f030002;$/;"	f	class:R.layout	access:public
-loading_dot1	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int loading_dot1=0x7f070010;$/;"	f	class:R.id	access:public
-loading_dot2	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int loading_dot2=0x7f070011;$/;"	f	class:R.id	access:public
-loading_dot3	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int loading_dot3=0x7f070012;$/;"	f	class:R.id	access:public
-loading_text	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int loading_text=0x7f07000e;$/;"	f	class:R.id	access:public
+loading	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int loading=0x7f030003;$/;"	f	class:R.layout	access:public
+loading_dot1	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int loading_dot1=0x7f070012;$/;"	f	class:R.id	access:public
+loading_dot2	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int loading_dot2=0x7f070013;$/;"	f	class:R.id	access:public
+loading_dot3	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int loading_dot3=0x7f070014;$/;"	f	class:R.id	access:public
+loading_text	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int loading_text=0x7f070010;$/;"	f	class:R.id	access:public
 location	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Enemy.java	/^    public Location location;$/;"	f	class:Enemy	access:public
 location	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Player.java	/^    public Location location;$/;"	f	class:Player	access:public
 location	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Powerup.java	/^    public Location location;$/;"	f	class:Powerup	access:public
 location	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Projectile.java	/^    public Location location;$/;"	f	class:Projectile	access:public
 location	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Sprite.java	/^    public Location location;$/;"	f	class:Sprite	access:public
-main	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int main=0x7f030003;$/;"	f	class:R.layout	access:public
-main_menu	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int main_menu=0x7f030004;$/;"	f	class:R.layout	access:public
-main_title	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int main_title=0x7f070015;$/;"	f	class:R.id	access:public
-main_view	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int main_view=0x7f070013;$/;"	f	class:R.id	access:public
+longClick	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/InputSource.java	/^    public boolean click, longClick;$/;"	f	class:InputSource	access:public
+longClickedBuffer	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/LocalInputSource.java	/^    private boolean longClickedBuffer = false;$/;"	f	class:LocalInputSource	file:	access:private
+main	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int main=0x7f030004;$/;"	f	class:R.layout	access:public
+main_menu	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int main_menu=0x7f030005;$/;"	f	class:R.layout	access:public
+main_title	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int main_title=0x7f070017;$/;"	f	class:R.id	access:public
+main_view	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int main_view=0x7f070015;$/;"	f	class:R.id	access:public
 maxX	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Location.java	/^    private float minX, maxX, minY, maxY;$/;"	f	class:Location	file:	access:private
 maxY	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Location.java	/^    private float minX, maxX, minY, maxY;$/;"	f	class:Location	file:	access:private
 minX	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Location.java	/^    private float minX, maxX, minY, maxY;$/;"	f	class:Location	file:	access:private
@@ -521,11 +567,14 @@ minY	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Location.java	
 murderous	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Projectile.java	/^    private boolean murderous = true;$/;"	f	class:Projectile	file:	access:private
 musicEnabled	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/GameSettings.java	/^	static boolean musicEnabled;$/;"	f	class:GameSettings	access:default
 onBackPressed	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/SwerveAndDestroy.java	/^    public void onBackPressed() {$/;"	m	class:SwerveAndDestroy	access:public	signature:()
+onClick	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/LocalInputSource.java	/^    public void onClick(View view){$/;"	m	class:LocalInputSource	access:public	signature:(View view)
 onClick	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^		public void onClick(View v) {$/;"	m	class:UIManager.SwapOnClickListener	access:public	signature:(View v)
 onCreate	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/SwerveAndDestroy.java	/^    public void onCreate(Bundle savedInstanceState) {$/;"	m	class:SwerveAndDestroy	access:public	signature:(Bundle savedInstanceState)
 onDestroy	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/SwerveAndDestroy.java	/^    public void onDestroy() { $/;"	m	class:SwerveAndDestroy	access:public	signature:()
+onLongClick	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/LocalInputSource.java	/^    public boolean onLongClick(View view){$/;"	m	class:LocalInputSource	access:public	signature:(View view)
 onTouch	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^		public boolean onTouch(View v, MotionEvent event) {$/;"	m	class:UIManager.SwapOnTouchListener	access:public	signature:(View v, MotionEvent event)
 opacity	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Enemy.java	/^    private int opacity = 0;$/;"	f	class:Enemy	file:	access:private
+opacity	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/GameView.java	/^    private int opacity = 100;$/;"	f	class:GameView	file:	access:private
 opacity	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Projectile.java	/^    private int opacity = 100;$/;"	f	class:Projectile	file:	access:private
 out_bottom	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int out_bottom=0x7f040008;$/;"	f	class:R.anim	access:public
 out_bottom_close	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int out_bottom_close=0x7f040009;$/;"	f	class:R.anim	access:public
@@ -535,12 +584,15 @@ out_left_close	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.ja
 out_right	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int out_right=0x7f04000d;$/;"	f	class:R.anim	access:public
 out_right_close	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int out_right_close=0x7f04000e;$/;"	f	class:R.anim	access:public
 out_top	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int out_top=0x7f04000f;$/;"	f	class:R.anim	access:public
+pauseGame	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^    public static void pauseGame(){$/;"	m	class:UIManager	access:public	signature:()
+pause_menu	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int pause_menu=0x7f030006;$/;"	f	class:R.layout	access:public
 paused	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Game.java	/^    private boolean paused = false;$/;"	f	class:Game	file:	access:private
 playerAttacked	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Game.java	/^    private void playerAttacked(Player player, Enemy enemy){$/;"	m	class:Game	file:	access:private	signature:(Player player, Enemy enemy)
 playerPowerup	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Game.java	/^    private void playerPowerup(Player player, Powerup powerup){$/;"	m	class:Game	file:	access:private	signature:(Player player, Powerup powerup)
 players	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Enemy.java	/^    private Player[] players;$/;"	f	class:Enemy	file:	access:private
 players	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Game.java	/^    private final Player[] players;$/;"	f	class:Game	file:	access:private
 playing	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Game.java	/^    public boolean playing(){$/;"	m	class:Game	access:public	signature:()
+playingGame	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/GameView.java	/^    private boolean playingGame = true;$/;"	f	class:GameView	file:	access:private
 powerups	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Game.java	/^    private final ArrayList<Powerup> powerups;$/;"	f	class:Game	file:	access:private
 powerupsCollected	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Player.java	/^    private int dotsKilled, powerupsCollected;$/;"	f	class:Player	file:	access:private
 prevScreen	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^	static Screen prevScreen = Screen.NO_SCREEN;$/;"	f	class:UIManager	access:default
@@ -550,6 +602,7 @@ radius	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Location.jav
 random	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Game.java	/^    private Random random = new Random();$/;"	f	class:Game	file:	access:private
 random	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Game.java	/^    private double random(){$/;"	m	class:Game	file:	access:private	signature:()
 randomLocation	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Location.java	/^    public static Location randomLocation(Random random, int radius){$/;"	m	class:Location	access:public	signature:(Random random, int radius)
+resumeGame	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^    public static void resumeGame(){$/;"	m	class:UIManager	access:public	signature:()
 run	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/LoadGameTask.java	/^	public void run() {		$/;"	m	class:LoadGameTask	access:public	signature:()
 save	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/GameSettings.java	/^	public static void save() {$/;"	m	class:GameSettings	access:public	signature:()
 scale	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/LocalInputSource.java	/^    private double scale(double value){$/;"	m	class:LocalInputSource	file:	access:private	signature:(double value)
@@ -587,9 +640,9 @@ target	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/Enemy.java	/
 text_descr_easy	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int text_descr_easy=0x7f070004;$/;"	f	class:R.id	access:public
 text_descr_hard	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int text_descr_hard=0x7f070006;$/;"	f	class:R.id	access:public
 text_descr_medium	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int text_descr_medium=0x7f070005;$/;"	f	class:R.id	access:public
-text_freeplay	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int text_freeplay=0x7f07000d;$/;"	f	class:R.id	access:public
-text_multiplayer	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int text_multiplayer=0x7f07000c;$/;"	f	class:R.id	access:public
-text_solo	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int text_solo=0x7f07000b;$/;"	f	class:R.id	access:public
+text_freeplay	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int text_freeplay=0x7f07000f;$/;"	f	class:R.id	access:public
+text_multiplayer	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int text_multiplayer=0x7f07000e;$/;"	f	class:R.id	access:public
+text_solo	/home/silver/swade/SwerveAndDestroy/gen/com/swerveanddestroy/R.java	/^        public static final int text_solo=0x7f07000d;$/;"	f	class:R.id	access:public
 toScreen	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^		Screen fromScreen, toScreen;$/;"	f	class:UIManager.SwapOnClickListener	access:default
 toggleBorderButtons	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/UIManager.java	/^	private static void toggleBorderButtons(boolean showMusic, boolean showBack, boolean showLeaderboard,$/;"	m	class:UIManager	file:	access:private	signature:(boolean showMusic, boolean showBack, boolean showLeaderboard, boolean showRules, boolean showSettings)
 toggleMusic	/home/silver/swade/SwerveAndDestroy/src/com/swerveanddestroy/GameSettings.java	/^	public static void toggleMusic() {$/;"	m	class:GameSettings	access:public	signature:()
