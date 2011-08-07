@@ -56,12 +56,12 @@ List of Features (Aimed at Java and Android Development)
     * Other refactorings/creation wizards available from Gvim menu
 * Building/launching your application:
     * If you're using maven (you aren't), press Shift-F5
-    * If you're using ant (you are, for android), press <F5> to build app, install, and run on phone
+    * If you're using ant (you are, for android), press &lt;F5&gt; to build app, install, and run on phone
     * If compile fails, it will take you to the error immediately
-    * If there's more than one error, press <F6> to go to the next one
-    * Press shift <F6> to go to the previous error
-    * Press <F7> to look at logcat output - only display things with message "Swade" (show all debug output)
-    * Press Shift <F7> to look at logcat output - only display things with message "Swade" (show error or fatal error ONLY)
+    * If there's more than one error, press &lt;F6&gt; to go to the next one
+    * Press shift &lt;F6&gt; to go to the previous error
+    * Press &lt;F7&gt; to look at logcat output - only display things with message "Swade" (show all debug output)
+    * Press Shift &lt;F7&gt; to look at logcat output - only display things with message "Swade" (show error or fatal error ONLY)
 * Navigation:
     * h, j, k, l to navigate instead of arrow keys
     * H, J, K, L to navigate 10x faster (fast scrolling)
