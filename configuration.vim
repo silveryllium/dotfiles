@@ -61,7 +61,7 @@ filetype plugin indent on
 
 " LaTeX stuff "
 set grepprg=grep\ -nH\ $*
-let g:tex_flavor='pdflatex'
+let g:tex_flavor='latex'
 
 " Tab = Four Spaces "
 call TabBehaviour()
@@ -91,6 +91,7 @@ autocmd GUIEnter * set visualbell t_vb=
 " Custom language settings "
 au! BufNewFile,BufRead *.java so ~/.vim/languages/Java.vim
 au! BufNewFile,BufRead *.tex so ~/.vim/languages/Latex.vim
+let g:Tex_DefaultTargetFormat='pdf'
 
 " Ignore these files with these extensions when auto-completing files "
 set wildignore=*.o,*.obj,*.exe,*.jpg,*.gif,*.png,*.class
@@ -102,6 +103,7 @@ set wildmode=longest:list
 
 " Press space to enter ex command mode "
 map <Space> :
+imap <Nop> <ESC>hli
 
 " Steal a few from Emacs "
 
