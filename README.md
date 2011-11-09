@@ -10,7 +10,6 @@ mv dotfiles ~/.vim
 # Make links to the configuration files from your home folder
 echo 'source ~/.vim/configuration.vim' > ~/.vimrc
 ln -s ~/.vim/foreign/zsh.config ~/.zshrc
-ln -s ~/.vim/foreign/zsh.jumps ~/.zsh.jump
 
 # Switch to zsh instead of bash
 chsh -s zsh
