@@ -105,15 +105,11 @@ set wildmode=longest:list
 map <Space> :
 imap <Nop> <ESC>hli
 
-" Steal a few from Emacs "
-
-" Use Ctrl-e and Ctrl-a to jump to end/start of lines, like Emacs "
+" Heresy
 imap <C-e> <ESC>$a
 imap <C-a> <ESC>^i
 map  <C-e>  <ESC>$
 map  <C-a> <ESC>^
-
-" Kill line "
 map <C-k> D
 imap <C-k> <ESC>Da
 
